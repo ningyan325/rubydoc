@@ -39,7 +39,7 @@ import javax.validation.constraints.*;
 @Path("/services")
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T19:40:11.927Z[GMT]")public class ServicesApi  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T21:05:35.798Z[GMT]")public class ServicesApi  {
    private final ServicesApiService delegate;
 
    public ServicesApi(@Context ServletConfig servletContext) {
@@ -67,7 +67,7 @@ import javax.validation.constraints.*;
     @Path("/v1/documents")
     
     @Produces({ "application/json", "application/pdf" })
-    @Operation(summary = "To get the PDF documents from a given campaign.", description = "", tags={ "Get Services" })
+    @Operation(summary = "To get the PDF documents info from a given campaign.", description = "", tags={ "Get Services" })
     @ApiResponses(value = { 
         @ApiResponse(responseCode = "200", description = "OK", content = @Content(schema = @Schema(implementation = DocumentCenter.class))),
         

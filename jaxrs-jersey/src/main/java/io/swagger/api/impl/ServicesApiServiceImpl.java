@@ -21,7 +21,7 @@ import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 import javax.validation.constraints.*;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T19:40:11.927Z[GMT]")public class ServicesApiServiceImpl extends ServicesApiService {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T21:05:35.798Z[GMT]")public class ServicesApiServiceImpl extends ServicesApiService {
     @Override
     public Response createPDFDocument(File userId,  @NotNull File campaignId,  File documentId,  List<String> versions,  File storage, SecurityContext securityContext) throws NotFoundException {
         // do some magic!
