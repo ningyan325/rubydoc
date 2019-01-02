@@ -39,7 +39,7 @@ import javax.validation.constraints.*;
 @Path("/services")
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T19:35:10.306Z[GMT]")public class ServicesApi  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T19:40:11.927Z[GMT]")public class ServicesApi  {
    private final ServicesApiService delegate;
 
    public ServicesApi(@Context ServletConfig servletContext) {

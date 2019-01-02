@@ -22,7 +22,7 @@ import javax.validation.constraints.*;
 /**
  * Collaborator
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T19:35:10.306Z[GMT]")public class Collaborator   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T19:40:11.927Z[GMT]")public class Collaborator   {
   @JsonProperty("name")
   private File name = null;
 
