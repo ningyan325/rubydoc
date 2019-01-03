@@ -21,7 +21,7 @@ import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 import javax.validation.constraints.*;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T05:00:18.527Z[GMT]")public class ServicesApiServiceImpl extends ServicesApiService {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T18:36:48.211Z[GMT]")public class ServicesApiServiceImpl extends ServicesApiService {
     @Override
     public Response collaborateOnDoc(DocumentCollaborators body, File userId,  @NotNull File campaignId, BigDecimal documentId,  List<String> versions, SecurityContext securityContext) throws NotFoundException {
         // do some magic!

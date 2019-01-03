@@ -39,7 +39,7 @@ import javax.validation.constraints.*;
 @Path("/services")
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T05:00:18.527Z[GMT]")public class ServicesApi  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T18:36:48.211Z[GMT]")public class ServicesApi  {
    private final ServicesApiService delegate;
 
    public ServicesApi(@Context ServletConfig servletContext) {
@@ -115,7 +115,7 @@ import javax.validation.constraints.*;
         @ApiResponse(responseCode = "400", description = "Bad Request, request body and parameters etc."),
         
         @ApiResponse(responseCode = "401", description = "Unauthorized") })
-    public Response createPDFDocument_1(@Parameter(description = "The information body for generating the PDF document, all data attribute fields below are manditory beside of 'documentId'. When 'documentId' is not provided, the new id will be auto generated in system and response result will inclulde the 'documentId' attribute; When 'documentId' is matched (and other storage info is valid), then a new version document will be created;" ,required=true) DocumentContent body
+    public Response createPDFDocument_1(@Parameter(description = "The information body for generating the PDF document, all attribute fields below are manditory beside of 'documentId'. When 'documentId' is not provided, the new id will be automatically generated in system and the responding result will inclulde the 'documentId' attribute; When 'documentId' is matched (and other storage info is valid), then a new version document will be created;" ,required=true) DocumentContent body
 
 ,
 @Parameter(description = "ID of an user" ,required=true)@HeaderParam("user_id") File userId
