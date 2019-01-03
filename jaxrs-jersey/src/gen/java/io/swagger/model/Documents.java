@@ -21,7 +21,7 @@ import javax.validation.constraints.*;
 /**
  * Documents
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T21:05:35.798Z[GMT]")public class Documents extends ArrayList<Document>  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T05:00:18.527Z[GMT]")public class Documents extends ArrayList<Document>  {
 
   @Override
   public boolean equals(java.lang.Object o) {

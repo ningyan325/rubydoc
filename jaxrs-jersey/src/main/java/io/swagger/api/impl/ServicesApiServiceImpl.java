@@ -21,7 +21,12 @@ import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 import javax.validation.constraints.*;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T21:05:35.798Z[GMT]")public class ServicesApiServiceImpl extends ServicesApiService {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T05:00:18.527Z[GMT]")public class ServicesApiServiceImpl extends ServicesApiService {
+    @Override
+    public Response collaborateOnDoc(DocumentCollaborators body, File userId,  @NotNull File campaignId, BigDecimal documentId,  List<String> versions, SecurityContext securityContext) throws NotFoundException {
+        // do some magic!
+        return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
+    }
     @Override
     public Response createPDFDocument(File userId,  @NotNull File campaignId,  File documentId,  List<String> versions,  File storage, SecurityContext securityContext) throws NotFoundException {
         // do some magic!
@@ -39,11 +44,6 @@ import javax.validation.constraints.*;
     }
     @Override
     public Response exportFile1(File userId,  @NotNull File campaignId,  BigDecimal documentId,  String destination,  List<String> versions, SecurityContext securityContext) throws NotFoundException {
-        // do some magic!
-        return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
-    }
-    @Override
-    public Response uploadFile(DocumentCollaborators body, File userId,  @NotNull File campaignId, BigDecimal documentId,  List<String> versions, SecurityContext securityContext) throws NotFoundException {
         // do some magic!
         return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
     }

@@ -39,7 +39,7 @@ import javax.validation.constraints.*;
 @Path("/services")
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T21:05:35.798Z[GMT]")public class ServicesApi  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T05:00:18.527Z[GMT]")public class ServicesApi  {
    private final ServicesApiService delegate;
 
    public ServicesApi(@Context ServletConfig servletContext) {
@@ -63,6 +63,25 @@ import javax.validation.constraints.*;
       this.delegate = delegate;
    }
 
+    @POST
+    @Path("/v1/documents/collaborate/{document_id}")
+    @Consumes({ "application/json" })
+    @Produces({ "application/json" })
+    @Operation(summary = "The action for having (add/remove) the document collaborators", description = "", tags={ "Collaborate Services" })
+    @ApiResponses(value = { 
+        @ApiResponse(responseCode = "200", description = "OK", content = @Content(schema = @Schema(implementation = GeneralResponseResult.class))) })
+    public Response collaborateOnDoc(@Parameter(description = "request body for setting up the document collaborators in json format" ,required=true) DocumentCollaborators body
+
+,
+@Parameter(description = "ID of an user" ,required=true)@HeaderParam("user_id") File userId
+
+,@Parameter(description = "ID of pet to update",required=true) @QueryParam("campaign_id") File campaignId
+,@Parameter(description = "ID of pet to update",required=true) @PathParam("document_id") BigDecimal documentId
+,@Parameter(description = "The data array holding specific versions, otherwise the call pickup the latest, [\"all\"] for all versions.") @QueryParam("versions") List<String> versions
+,@Context SecurityContext securityContext)
+    throws NotFoundException {
+        return delegate.collaborateOnDoc(body,userId,campaignId,documentId,versions,securityContext);
+    }
     @GET
     @Path("/v1/documents")
     
@@ -159,24 +178,5 @@ import javax.validation.constraints.*;
 ,@Context SecurityContext securityContext)
     throws NotFoundException {
         return delegate.exportFile1(userId,campaignId,documentId,destination,versions,securityContext);
-    }
-    @POST
-    @Path("/v1/documents/collaborate/{document_id}")
-    @Consumes({ "application/json" })
-    @Produces({ "application/json" })
-    @Operation(summary = "The action for having (add/remove) the document collaborators", description = "", tags={ "Collaborate Services" })
-    @ApiResponses(value = { 
-        @ApiResponse(responseCode = "200", description = "OK", content = @Content(schema = @Schema(implementation = GeneralResponseResult.class))) })
-    public Response uploadFile(@Parameter(description = "request body for setting up the document collaborators in json format" ,required=true) DocumentCollaborators body
-
-,
-@Parameter(description = "ID of an user" ,required=true)@HeaderParam("user_id") File userId
-
-,@Parameter(description = "ID of pet to update",required=true) @QueryParam("campaign_id") File campaignId
-,@Parameter(description = "ID of pet to update",required=true) @PathParam("document_id") BigDecimal documentId
-,@Parameter(description = "The data array holding specific versions, otherwise the call pickup the latest, [\"all\"] for all versions.") @QueryParam("versions") List<String> versions
-,@Context SecurityContext securityContext)
-    throws NotFoundException {
-        return delegate.uploadFile(body,userId,campaignId,documentId,versions,securityContext);
     }
 }

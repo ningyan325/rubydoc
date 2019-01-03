@@ -23,7 +23,7 @@ import javax.validation.constraints.*;
 /**
  * BoxInfo
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-02T21:05:35.798Z[GMT]")public class BoxInfo   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T05:00:18.527Z[GMT]")public class BoxInfo   {
   @JsonProperty("path")
   private File path = null;
 
