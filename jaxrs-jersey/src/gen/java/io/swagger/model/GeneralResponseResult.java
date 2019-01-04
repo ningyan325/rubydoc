@@ -23,7 +23,7 @@ import javax.validation.constraints.*;
 /**
  * GeneralResponseResult
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T18:36:48.211Z[GMT]")public class GeneralResponseResult   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-04T19:13:47.171Z[GMT]")public class GeneralResponseResult   {
   @JsonProperty("campaignId")
   private File campaignId = null;
 

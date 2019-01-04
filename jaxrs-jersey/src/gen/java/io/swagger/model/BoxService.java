@@ -22,7 +22,7 @@ import javax.validation.constraints.*;
 /**
  * BoxService
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T18:36:48.211Z[GMT]")public class BoxService   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-04T19:13:47.171Z[GMT]")public class BoxService   {
   @JsonProperty("assigned")
   private Boolean assigned = null;
 

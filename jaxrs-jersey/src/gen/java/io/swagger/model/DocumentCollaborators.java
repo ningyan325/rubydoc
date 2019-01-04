@@ -25,7 +25,7 @@ import javax.validation.constraints.*;
 /**
  * DocumentCollaborators
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T18:36:48.211Z[GMT]")public class DocumentCollaborators   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-04T19:13:47.171Z[GMT]")public class DocumentCollaborators   {
   @JsonProperty("documentId")
   private File documentId = null;
 

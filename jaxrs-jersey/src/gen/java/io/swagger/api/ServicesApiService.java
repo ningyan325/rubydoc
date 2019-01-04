@@ -21,9 +21,9 @@ import java.io.InputStream;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 import javax.validation.constraints.*;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-03T18:36:48.211Z[GMT]")public abstract class ServicesApiService {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-04T19:13:47.171Z[GMT]")public abstract class ServicesApiService {
     public abstract Response collaborateOnDoc(DocumentCollaborators body,File userId, @NotNull File campaignId,BigDecimal documentId, List<String> versions,SecurityContext securityContext) throws NotFoundException;
-    public abstract Response createPDFDocument(File userId, @NotNull File campaignId, File documentId, List<String> versions, File storage,SecurityContext securityContext) throws NotFoundException;
+    public abstract Response createPDFDocument(File userId, @NotNull File campaignId,File documentId, List<String> versions, File storage,SecurityContext securityContext) throws NotFoundException;
     public abstract Response createPDFDocument_1(DocumentContent body,File userId,File campaignId, BigDecimal documentId, Boolean preview,SecurityContext securityContext) throws NotFoundException;
     public abstract Response downloadFile1(File userId, @NotNull File campaignId, BigDecimal documentId, List<String> versions, File fileas,SecurityContext securityContext) throws NotFoundException;
     public abstract Response exportFile1(File userId, @NotNull File campaignId, BigDecimal documentId, String destination, List<String> versions,SecurityContext securityContext) throws NotFoundException;
