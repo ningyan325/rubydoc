@@ -39,7 +39,7 @@ import javax.validation.constraints.*;
 @Path("/services")
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-04T19:13:47.171Z[GMT]")public class ServicesApi  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-04T19:28:48.456Z[GMT]")public class ServicesApi  {
    private final ServicesApiService delegate;
 
    public ServicesApi(@Context ServletConfig servletContext) {
@@ -97,12 +97,9 @@ import javax.validation.constraints.*;
 @Parameter(description = "ID of an user" ,required=true)@HeaderParam("user_id") File userId
 
 ,@Parameter(description = "ID of a campaign",required=true) @QueryParam("campaign_id") File campaignId
-,@Parameter(description = "ID of a campaign",required=true) @PathParam("document_id") File documentId
-,@Parameter(description = "The data array holding specific versions, otherwise the call pickup the latest, [\"all\"] for all versions.") @QueryParam("versions") List<String> versions
-,@Parameter(description = "The storage of saved document, default place is where the master copy saved.") @QueryParam("storage") File storage
 ,@Context SecurityContext securityContext)
     throws NotFoundException {
-        return delegate.createPDFDocument(userId,campaignId,documentId,versions,storage,securityContext);
+        return delegate.createPDFDocument(userId,campaignId,securityContext);
     }
     @POST
     @Path("/v1/documents")
@@ -126,6 +123,28 @@ import javax.validation.constraints.*;
 ,@Context SecurityContext securityContext)
     throws NotFoundException {
         return delegate.createPDFDocument_1(body,userId,campaignId,documentId,preview,securityContext);
+    }
+    @GET
+    @Path("/v1/documents/{document_id}")
+    
+    @Produces({ "application/json", "application/pdf" })
+    @Operation(summary = "To get the document info from a given document_id.", description = "", tags={ "Get Services" })
+    @ApiResponses(value = { 
+        @ApiResponse(responseCode = "200", description = "OK", content = @Content(schema = @Schema(implementation = DocumentCenter.class))),
+        
+        @ApiResponse(responseCode = "400", description = "Bad Request, Wrong query parameter(s)"),
+        
+        @ApiResponse(responseCode = "401", description = "Unauthorized") })
+    public Response createPDFDocument_2(
+@Parameter(description = "ID of an user" ,required=true)@HeaderParam("user_id") File userId
+
+,@Parameter(description = "ID of a campaign",required=true) @QueryParam("campaign_id") File campaignId
+,@Parameter(description = "ID of a campaign",required=true) @PathParam("document_id") File documentId
+,@Parameter(description = "The data array holding specific versions, otherwise the call pickup the latest, [\"all\"] for all versions.") @QueryParam("versions") List<String> versions
+,@Parameter(description = "The storage of saved document, default place is where the master copy saved.") @QueryParam("storage") File storage
+,@Context SecurityContext securityContext)
+    throws NotFoundException {
+        return delegate.createPDFDocument_2(userId,campaignId,documentId,versions,storage,securityContext);
     }
     @GET
     @Path("/v1/documents/download")

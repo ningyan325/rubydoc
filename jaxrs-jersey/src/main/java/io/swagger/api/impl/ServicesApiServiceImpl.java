@@ -21,19 +21,24 @@ import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 import javax.validation.constraints.*;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-04T19:13:47.171Z[GMT]")public class ServicesApiServiceImpl extends ServicesApiService {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-04T19:28:48.456Z[GMT]")public class ServicesApiServiceImpl extends ServicesApiService {
     @Override
     public Response collaborateOnDoc(DocumentCollaborators body, File userId,  @NotNull File campaignId, BigDecimal documentId,  List<String> versions, SecurityContext securityContext) throws NotFoundException {
         // do some magic!
         return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
     }
     @Override
-    public Response createPDFDocument(File userId,  @NotNull File campaignId, File documentId,  List<String> versions,  File storage, SecurityContext securityContext) throws NotFoundException {
+    public Response createPDFDocument(File userId,  @NotNull File campaignId, SecurityContext securityContext) throws NotFoundException {
         // do some magic!
         return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
     }
     @Override
     public Response createPDFDocument_1(DocumentContent body, File userId, File campaignId,  BigDecimal documentId,  Boolean preview, SecurityContext securityContext) throws NotFoundException {
+        // do some magic!
+        return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
+    }
+    @Override
+    public Response createPDFDocument_2(File userId,  @NotNull File campaignId, File documentId,  List<String> versions,  File storage, SecurityContext securityContext) throws NotFoundException {
         // do some magic!
         return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
     }
