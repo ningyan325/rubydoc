@@ -39,7 +39,7 @@ import javax.validation.constraints.*;
 @Path("/services")
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-04T19:28:48.456Z[GMT]")public class ServicesApi  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2019-01-04T19:31:15.060Z[GMT]")public class ServicesApi  {
    private final ServicesApiService delegate;
 
    public ServicesApi(@Context ServletConfig servletContext) {
@@ -141,7 +141,7 @@ import javax.validation.constraints.*;
 ,@Parameter(description = "ID of a campaign",required=true) @QueryParam("campaign_id") File campaignId
 ,@Parameter(description = "ID of a campaign",required=true) @PathParam("document_id") File documentId
 ,@Parameter(description = "The data array holding specific versions, otherwise the call pickup the latest, [\"all\"] for all versions.") @QueryParam("versions") List<String> versions
-,@Parameter(description = "The storage of saved document, default place is where the master copy saved.") @QueryParam("storage") File storage
+,@Parameter(description = "The storage of saved document, default place is where the master copy saved.(Feature in future)") @QueryParam("storage") File storage
 ,@Context SecurityContext securityContext)
     throws NotFoundException {
         return delegate.createPDFDocument_2(userId,campaignId,documentId,versions,storage,securityContext);
